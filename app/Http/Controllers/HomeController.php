@@ -15,7 +15,7 @@ class HomeController extends Controller
         return view('home');
       }
       return redirect()->route('tasks.index',[
-        'id' => $folder->id,
+        'folder' => $folder->id,
       ]);
 
     }
